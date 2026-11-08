@@ -1,8 +1,6 @@
 # ISM2411 Lab 11 — Customer Dictionary & Lookup
 
-**Name:** Your Name Here
-
-## How to Run
+**Name:** Ayme Maradiaga## How to Run
 
 From this folder:
 
