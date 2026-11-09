@@ -1,3 +1,24 @@
+# Reflection Questions
+#
+# 1. .get() vs. bracket notation:
+# I would use .get() when a key might be missing, like an
+# customer's email or phone, or a tier that is not
+# in a lookup table, because I can supply a safe default and the program keeps
+# running. I would use bracket notation when the key is required and a missing
+# value means something is wrong, because the KeyError makes the bug obvious
+# instead of hiding it. My rule of thumb: .get() for optional data, brackets
+# for required data.
+#
+# 2. Sales by region summary:
+# This pattern reminds me of a PivotTable in Excel, where you add
+# up amounts grouped by a category such as region. The Python version is more
+# useful for large datasets because it can process millions of rows without
+# Excel's row limits, and the same script can be rerun on new
+# data automatically instead of rebuilding the pivot by hand. It is also
+# easier to extend, since I can add filters or other calculations in the same
+# loop.
+
+
 # Exercise 1: One customer
 customer = {
     "name": "Alice",
