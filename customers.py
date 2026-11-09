@@ -53,3 +53,17 @@ final_price = price * (1 - discount)
 print(f"Tier: {tier}")
 print(f"Discount: {discount * 100:.0f}%")
 print(f"Final price: ${final_price:.2f}")
+
+# Exercise 6: List of dicts
+print("\nExercise 6")
+customers = [
+    {"name": "Alice", "email": "alice@example.com", "tier": "platinum", "ytd_spend": 3200.00},
+    {"name": "Bob", "email": "bob@example.com", "tier": "silver", "ytd_spend": 640.25},
+    {"name": "Cara", "email": "cara@example.com", "tier": "bronze", "ytd_spend": 120.00},
+]
+
+purchase = 300
+for c in customers:
+    rate = tier_discounts.get(c["tier"], 0)
+    discount_amount = purchase * rate
+    print(f"{c['name']} | {c['tier']} | discount: ${discount_amount:.2f}")
