@@ -31,3 +31,13 @@ try:
     print(customer["email"])
 except KeyError:
     print("KeyError: 'email' is not in the dictionary")
+
+# Exercise 4: Iterate
+print("\nExercise 4")
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+# Looping over the dict without .items() gives only the keys, not the
+# values. .items() gives (key, value) pairs, so we can unpack both.
+for key in customer:
+    print(key)
